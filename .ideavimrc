@@ -1,0 +1,22 @@
+" Options
+
+set clipboard+=unnamed
+set timeoutlen=300
+
+
+" Mappings
+
+let mapleader = " "
+
+imap jj <Esc>
+
+nmap <leader>c :action CommentByLineComment<CR>
+nmap <leader>u :action FindUsages<CR>
+nmap <leader>i :action GotoImplementation<CR>
+
+nnoremap <c-o> :action Back<cr>
+nnoremap <c-i> :action Forward<cr>
+
+nnoremap <c-a> ggVG                                 " Select all
+
+nmap <Leader>or :action ManageRecentProjects<CR>
