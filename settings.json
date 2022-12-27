@@ -1,4 +1,25 @@
 {
+  "editor.fontSize": 18,
+  "files.autoSave": "afterDelay",
+  "settingsSync.ignoredSettings": [
+  
+    "editor.fontSize"
+  ],
+  "workbench.editor.showTabs": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.panel.opensMaximized": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -37,11 +58,22 @@
       "commands": ["editor.action.goToReferences"]
     },
     {
+      "before": ["<leader>", "h"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["<leader>", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": ["<leader>", "f", "f"],
+      "before": ["<C-o>"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<C-i>"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    { "before": ["<leader>", "f", "f"],
       "commands": ["workbench.view.search"]
     },
     {
