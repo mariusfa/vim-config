@@ -1,7 +1,9 @@
 " Options
 
 set clipboard+=unnamed
-set timeoutlen=300
+set timeoutlen=500
+set relativenumber
+set number
 
 
 " Mappings
@@ -10,7 +12,7 @@ let mapleader = " "
 
 imap jj <Esc>
 
-nmap <leader>c :action CommentByLineComment<CR>
+vmap <leader>c :action CommentByLineComment<CR>
 nmap <leader>u :action FindUsages<CR>
 nmap <leader>i :action GotoImplementation<CR>
 
@@ -20,3 +22,6 @@ nnoremap <c-i> :action Forward<cr>
 nnoremap <c-a> ggVG                                 " Select all
 
 nmap <Leader>or :action ManageRecentProjects<CR>
+nmap <Leader>e :action SelectInProjectView<CR>
+nmap <Leader>ff :action FindInPath<CR>
+nmap <Leader>rr :action RenameElement<CR>
