@@ -15,6 +15,7 @@ imap jj <Esc>
 vmap <leader>c :action CommentByLineComment<CR>
 nmap <leader>u :action FindUsages<CR>
 nmap <leader>i :action GotoImplementation<CR>
+nmap <leader>d :action GotoDeclaration<CR>
 
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
