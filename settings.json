@@ -162,7 +162,17 @@
             "commands": [
                 "editor.action.organizeImports"
             ]
-        }
+        },
+        {
+            "before": [
+                "<leader>",
+                "o",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.openRecent"
+            ]
+        },
     ],
     "vim.visualModeKeyBindings": [
         {
