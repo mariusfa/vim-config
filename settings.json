@@ -196,5 +196,14 @@
     "vim.handleKeys": {
         "<C-f>": false,
     },
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.openAndToggleSidebar",
+            "sequence": [
+                "explorer.openAndPassFocus",
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        }
+    ]
 }
