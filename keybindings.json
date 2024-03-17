@@ -29,4 +29,16 @@
         "command": "inlineChat.start",
         "when": "inlineChatHasProvider && !editorReadonly"
     },
+    // run test at cursor
+    {
+        "key": "ctrl+r",
+        "command": "testing.runAtCursor",
+        "when": "editorTextFocus"
+    },
+    // run all tests in package
+    {
+        "key": "ctrl+shift+r",
+        "command": "testing.runCurrentFile",
+        "when": "editorTextFocus"
+    },
 ]
