@@ -1,28 +1,10 @@
 {
-    "files.autoSave": "afterDelay",
-    "settingsSync.ignoredSettings": [
-        "editor.fontSize"
-    ],
-    "workbench.editor.showTabs": false,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.panel.opensMaximized": "always",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "vim.timeout": 500,
+    "vim.timeout": 1000,
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -48,7 +30,7 @@
         },
         {
             "before": [
-                "<leader>",
+                "g",
                 "c"
             ],
             "commands": [
@@ -58,7 +40,7 @@
         {
             "before": [
                 "<leader>",
-                "r",
+                "c",
                 "r"
             ],
             "commands": [
@@ -76,7 +58,7 @@
         },
         {
             "before": [
-                "<leader>",
+                "g",
                 "d"
             ],
             "commands": [
@@ -85,8 +67,8 @@
         },
         {
             "before": [
-                "<leader>",
-                "u"
+                "g",
+                "r"
             ],
             "commands": [
                 "editor.action.goToReferences"
@@ -94,8 +76,7 @@
         },
         {
             "before": [
-                "<leader>",
-                "h"
+                "K",
             ],
             "commands": [
                 "editor.action.showHover"
@@ -104,10 +85,21 @@
         {
             "before": [
                 "<leader>",
+                "s",
                 "f"
             ],
             "commands": [
                 "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "a"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
             ]
         },
         {
@@ -129,8 +121,8 @@
         {
             "before": [
                 "<leader>",
-                "f",
-                "f"
+                "s",
+                "g"
             ],
             "commands": [
                 "workbench.view.search"
@@ -148,7 +140,8 @@
         {
             "before": [
                 "<leader>",
-                "l"
+                "c",
+                "f"
             ],
             "commands": [
                 "editor.action.formatDocument"
@@ -157,6 +150,7 @@
         {
             "before": [
                 "<leader>",
+                "c",
                 "o"
             ],
             "commands": [
@@ -173,8 +167,27 @@
                 "workbench.action.openRecent"
             ]
         },
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
     ],
     "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "g",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
         {
             "before": [
                 ">"
@@ -195,8 +208,24 @@
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-f>": false,
+        "<C-b>": false,
+        "<C-p>": false,
     },
-    "prettier.tabWidth": 4,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.showTabs": "single",
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.showTabs": "single",
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "window.zoomLevel": 2,
+    "workbench.iconTheme": "material-icon-theme",
     "multiCommand.commands": [
         {
             "command": "multiCommand.openAndToggleSidebar",
@@ -205,5 +234,18 @@
                 "workbench.action.toggleSidebarVisibility"
             ]
         }
-    ]
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.compactFolders": false,
+    "workbench.colorTheme": "GitHub Light Default",
+    "git.enableSmartCommit": true
 }
