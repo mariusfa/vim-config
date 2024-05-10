@@ -1,10 +1,9 @@
 " Options
 
-set clipboard+=unnamed
-set timeoutlen=500
-set relativenumber
-set number
+set which-key
 
+set clipboard+=unnamed
+set notimeout
 
 " Mappings
 
@@ -12,17 +11,87 @@ let mapleader = " "
 
 imap jj <Esc>
 
-vmap <leader>c :action CommentByLineComment<CR>
-nmap <leader>u :action FindUsages<CR>
-nmap <leader>i :action GotoImplementation<CR>
-nmap <leader>d :action GotoDeclaration<CR>
+
+vmap gc :action CommentByLineComment<CR>
+nmap gr :action FindUsages<CR>
+nmap gd :action GotoImplementation<CR>
+nmap gd :action GotoDeclaration<CR>
 
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
 
-nnoremap <c-a> ggVG                                 " Select all
 
+" Open
+let g:WhichKeyDesc_open = "<leader>o Open"
+
+" Open recent
+let g:WhichKeyDesc_open_recent = "<leader>or Open Recent"
 nmap <Leader>or :action ManageRecentProjects<CR>
-nmap <Leader>e :action SelectInProjectView<CR>
-nmap <Leader>ff :action FindInPath<CR>
-nmap <Leader>rr :action RenameElement<CR>
+
+" Prosject tree
+let g:WhichKeyDesc_project_tree = "<leader>e Project Tree"
+nmap <Leader>e :action ActivateProjectToolWindow<CR>
+
+" Code actions
+nmap K :action ShowHoverInfo<CR>
+
+let g:WhichKeyDesc_code_commands = "<leader>c Code Commands"
+
+let g:WhichKeyDesc_code_rename = "<leader>cr Rename"
+nmap <leader>cr :action RenameElement<CR>
+
+let g:WhichKeyDesc_code_actions = "<leader>ca Code Actions"
+nmap <leader>ca :action ShowIntentionActions<CR>
+
+let g:WhichKeyDesc_code_format = "<leader>cf Format"
+nmap <Leader>cf :action ReformatCode<CR>
+
+let g:WhichKeyDesc_code_optimize = "<leader>co Optimize imports"
+nmap <Leader>co :action OptimizeImports<CR>
+
+
+" Search
+let g:WhichKeyDesc_search = "<leader>s Search"
+
+let g:WhichKeyDesc_search_grep = "<leader>sg Search Grep"
+nmap <leader>sg :action FindInPath<CR>
+
+let g:WhichKeyDesc_search_file = "<leader>sf Search File"
+nmap <Leader>sf :action GotoFile<CR>
+
+let g:WhichKeyDesc_search_action = "<leader>sa Search Action"
+nmap <Leader>sa :action GotoAction<CR>
+
+let g:WhichKeyDesc_search_everywhere = "<leader>se Search Everywhere"
+nmap <Leader>se :action SearchEverywhere<CR>
+
+" Nice to haves
+
+" Indent right and keep text selected
+vnoremap > >gv
+" Indent left and keep text selected
+vnoremap < <gv
+
+let g:WhichKeyDesc_recent_files = "<leader>, Recent Files"
+nmap <leader>, :action RecentFiles<CR>
+
+" Run
+let g:WhichKeyDesc_run = "<leader>r Run"
+
+" Run at cursor
+let g:WhichKeyDesc_run_cursor = "<leader>rc Run at cursor"
+nmap <leader>rc :action RunClass<CR>
+
+" Run debug
+let g:WhichKeyDesc_run_debug = "<leader>rd Run debug at cursor"
+nmap <leader>rd :action DebugClass<CR>
+
+" Run last
+let g:WhichKeyDesc_run_last = "<leader>rl Run last"
+nmap <leader>rl :action Run<CR>
+
+"Run stop
+let g:WhichKeyDesc_run_stop = "<leader>rs Run stop"
+nmap <leader>rs :action Stop<CR>
+
+
