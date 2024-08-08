@@ -94,4 +94,7 @@ nmap <leader>rl :action Run<CR>
 let g:WhichKeyDesc_run_stop = "<leader>rs Run stop"
 nmap <leader>rs :action Stop<CR>
 
+"Distraction free mode toggle
+let g:WhichKeyDesc_distraction_free = "<leader>nn Distraction Free mode (no neck pain)"
+nmap <leader>nn :action ToggleDistractionFreeMode<CR>
 
