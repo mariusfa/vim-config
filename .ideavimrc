@@ -94,7 +94,19 @@ nmap <leader>rl :action Run<CR>
 let g:WhichKeyDesc_run_stop = "<leader>rs Run stop"
 nmap <leader>rs :action Stop<CR>
 
+
+" Modes
+let g:WhichKeyDesc_modes = "<leader>n Modes"
+
 "Distraction free mode toggle
 let g:WhichKeyDesc_distraction_free = "<leader>nn Distraction Free mode (no neck pain)"
 nmap <leader>nn :action ToggleDistractionFreeMode<CR>
+
+"Hide
+let g:WhichKeyDesc_hide = "<leader>h Hide"
+
+"Hide windows
+let g:WhichKeyDesc_hide_windows = "<leader>ha Hide(toggle) all windows"
+nmap <leader>ha :action HideAllWindows<CR>
+
 
