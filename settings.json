@@ -7,209 +7,104 @@
     "vim.timeout": 1000,
     "vim.insertModeKeyBindings": [
         {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": [
-                "<C-a>"
-            ],
-            "after": [
-                "g",
-                "g",
-                "V",
-                "G"
-            ]
+            "before": ["<C-a>"],
+            "after": ["g", "g", "V", "G"]
         },
         {
-            "before": [
-                "g",
-                "c"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
+            "before": ["g", "c"],
+            "commands": ["editor.action.commentLine"]
         },
         {
-            "before": [
-                "<leader>",
-                "c",
-                "r"
-            ],
-            "commands": [
-                "editor.action.rename"
-            ]
+            "before": ["<leader>", "c", "r"],
+            "commands": ["editor.action.rename"]
         },
         {
-            "before": [
-                "<leader>",
-                "i"
-            ],
-            "commands": [
-                "editor.action.goToImplementation"
-            ]
+            "before": ["<leader>", "i"],
+            "commands": ["editor.action.goToImplementation"]
         },
         {
-            "before": [
-                "g",
-                "d"
-            ],
-            "commands": [
-                "editor.action.revealDefinition"
-            ]
+            "before": ["g", "d"],
+            "commands": ["editor.action.revealDefinition"]
         },
         {
-            "before": [
-                "g",
-                "r"
-            ],
-            "commands": [
-                "editor.action.goToReferences"
-            ]
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"]
         },
         {
-            "before": [
-                "K",
-            ],
-            "commands": [
-                "editor.action.showHover"
-            ]
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
         },
         {
-            "before": [
-                "<leader>",
-                "s",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
+            "before": ["<leader>", "s", "f"],
+            "commands": ["workbench.action.quickOpen"]
         },
         {
-            "before": [
-                "<leader>",
-                "s",
-                "a"
-            ],
-            "commands": [
-                "workbench.action.showCommands"
-            ]
+            "before": ["<leader>", "s", "a"],
+            "commands": ["workbench.action.showCommands"]
         },
         {
-            "before": [
-                "<C-o>"
-            ],
-            "commands": [
-                "workbench.action.navigateBack"
-            ]
+            "before": ["<C-o>"],
+            "commands": ["workbench.action.navigateBack"]
         },
         {
-            "before": [
-                "<C-i>"
-            ],
-            "commands": [
-                "workbench.action.navigateForward"
-            ]
+            "before": ["<C-i>"],
+            "commands": ["workbench.action.navigateForward"]
         },
         {
-            "before": [
-                "<leader>",
-                "s",
-                "g"
-            ],
-            "commands": [
-                "workbench.view.search"
-            ]
+            "before": ["<leader>", "s", "g"],
+            "commands": ["workbench.view.search"]
         },
         {
-            "before": [
-                "<leader>",
-                "e"
-            ],
-            "commands": [
-                "workbench.view.explorer"
-            ]
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
         },
         {
-            "before": [
-                "<leader>",
-                "c",
-                "f"
-            ],
-            "commands": [
-                "editor.action.formatDocument"
-            ]
+            "before": ["<leader>", "c", "f"],
+            "commands": ["editor.action.formatDocument"]
         },
         {
-            "before": [
-                "<leader>",
-                "c",
-                "o"
-            ],
-            "commands": [
-                "editor.action.organizeImports"
-            ]
+            "before": ["<leader>", "c", "o"],
+            "commands": ["editor.action.organizeImports"]
         },
         {
-            "before": [
-                "<leader>",
-                "o",
-                "r"
-            ],
-            "commands": [
-                "workbench.action.openRecent"
-            ]
+            "before": ["<leader>", "o", "r"],
+            "commands": ["workbench.action.openRecent"]
         },
         {
-            "before": [
-                "<leader>",
-                "c",
-                "a"
-            ],
-            "commands": [
-                "editor.action.quickFix"
-            ]
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"]
         },
+        // open source control view
+        {
+            "before": ["<leader>", "g", "g"],
+            "commands": ["workbench.view.scm"]
+        }
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": [
-                "g",
-                "c"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
+            "before": ["g", "c"],
+            "commands": ["editor.action.commentLine"]
         },
         {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
         },
         {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
         }
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-f>": false,
         "<C-b>": false,
-        "<C-p>": false,
+        "<C-p>": false
     },
     "files.autoSave": "afterDelay",
     "workbench.editor.showTabs": "single",

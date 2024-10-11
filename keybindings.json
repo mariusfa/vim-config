@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
     // new file
     {
@@ -48,7 +49,12 @@
         "args": {
             "command": "multiCommand.openAndToggleSidebar"
         },
-        "when": "sideBarFocus && !inputFocus && !explorerResourceIsFolder",
-
-    }
+        "when": "sideBarFocus && !inputFocus && !explorerResourceIsFolder"
+    },
+    // close file explorer when focus on file explorer
+    {
+        "key": "q",
+        "command": "workbench.action.closeSidebar",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
 ]
