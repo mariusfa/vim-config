@@ -7,97 +7,213 @@
     "vim.timeout": 1000,
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<C-a>"],
-            "after": ["g", "g", "V", "G"]
+            "before": [
+                "<C-a>"
+            ],
+            "after": [
+                "g",
+                "g",
+                "V",
+                "G"
+            ]
         },
         {
-            "before": ["g", "c"],
-            "commands": ["editor.action.commentLine"]
+            "before": [
+                "g",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
         },
         {
-            "before": ["<leader>", "c", "r"],
-            "commands": ["editor.action.rename"]
+            "before": [
+                "<leader>",
+                "c",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
         },
         {
-            "before": ["<leader>", "i"],
-            "commands": ["editor.action.goToImplementation"]
+            "before": [
+                "<leader>",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
         },
         {
-            "before": ["g", "d"],
-            "commands": ["editor.action.revealDefinition"]
+            "before": [
+                "g",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
         },
         {
-            "before": ["g", "r"],
-            "commands": ["editor.action.goToReferences"]
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
         },
         {
-            "before": ["K"],
-            "commands": ["editor.action.showHover"]
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
         },
         {
-            "before": ["<leader>", "s", "f"],
-            "commands": ["workbench.action.quickOpen"]
+            "before": [
+                "<leader>",
+                "s",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
         },
         {
-            "before": ["<leader>", "s", "a"],
-            "commands": ["workbench.action.showCommands"]
+            "before": [
+                "<leader>",
+                "s",
+                "a"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
+            ]
         },
         {
-            "before": ["<C-o>"],
-            "commands": ["workbench.action.navigateBack"]
+            "before": [
+                "<C-o>"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
         },
         {
-            "before": ["<C-i>"],
-            "commands": ["workbench.action.navigateForward"]
+            "before": [
+                "<C-i>"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
         },
         {
-            "before": ["<leader>", "s", "g"],
-            "commands": ["workbench.view.search"]
+            "before": [
+                "<leader>",
+                "s",
+                "g"
+            ],
+            "commands": [
+                "workbench.view.search"
+            ]
         },
         {
-            "before": ["<leader>", "e"],
-            "commands": ["workbench.view.explorer"]
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
         },
         {
-            "before": ["<leader>", "c", "f"],
-            "commands": ["editor.action.formatDocument"]
+            "before": [
+                "<leader>",
+                "c",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
         },
         {
-            "before": ["<leader>", "c", "o"],
-            "commands": ["editor.action.organizeImports"]
+            "before": [
+                "<leader>",
+                "c",
+                "o"
+            ],
+            "commands": [
+                "editor.action.organizeImports"
+            ]
         },
         {
-            "before": ["<leader>", "o", "r"],
-            "commands": ["workbench.action.openRecent"]
+            "before": [
+                "<leader>",
+                "o",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.openRecent"
+            ]
         },
         {
-            "before": ["<leader>", "c", "a"],
-            "commands": ["editor.action.quickFix"]
+            "before": [
+                "<leader>",
+                "c",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
         },
         // open source control view
         {
-            "before": ["<leader>", "g", "g"],
-            "commands": ["workbench.view.scm"]
+            "before": [
+                "<leader>",
+                "g",
+                "g"
+            ],
+            "commands": [
+                "workbench.view.scm"
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": ["g", "c"],
-            "commands": ["editor.action.commentLine"]
+            "before": [
+                "g",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
         },
         {
-            "before": [">"],
-            "commands": ["editor.action.indentLines"]
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
         },
         {
-            "before": ["<"],
-            "commands": ["editor.action.outdentLines"]
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
         }
     ],
     "vim.leader": "<space>",
@@ -119,8 +235,7 @@
         "markdown": true,
         "scminput": false
     },
-    "window.zoomLevel": 2,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "catppuccin-mocha",
     "multiCommand.commands": [
         {
             "command": "multiCommand.openAndToggleSidebar",
@@ -131,7 +246,7 @@
         }
     ],
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "prettier.tabWidth": 4,
     "[typescriptreact]": {
@@ -141,6 +256,34 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "explorer.compactFolders": false,
-    "workbench.colorTheme": "GitHub Light Default",
-    "git.enableSmartCommit": true
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "git.enableSmartCommit": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "git.confirmSync": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.preferredLightColorTheme": "Catppuccin Frappé",
+    "workbench.statusBar.visible": false,
+    "typescript.tsserver.log": "off",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.tools.terminal.autoApprove": {
+        "npm run build": true,
+        "npm run test": true,
+        "npm run check-types": true,
+        "npm run lint": true,
+        "npm run prettier": true,
+        "git status": true,
+        "git rev-parse --abbrev-ref HEAD": true,
+        "git add -A": true,
+        "/^git add .*/": true,
+        "git commit": true,
+        "git push": true,
+        "/^git checkout .*/": true,
+        "git pull": true,
+        "git branch": true,
+        "/^git branch -D (?!main$).*/": true
+    }
 }
